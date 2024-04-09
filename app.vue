@@ -25,7 +25,7 @@ export default defineComponent({
   methods: {
     async fetchData() {
       try {
-        const response = await fetch('http://localhost:8080/event'); 
+        const response = await fetch('http://localhost:8081/event'); 
         const data = await response.json();
         this.events = data;
         this.dataLoaded = true;
